@@ -1,0 +1,96 @@
+.header {
+    text-align: left;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    border: 0em;
+    background: rgba(0, 16, 20, 0.2);
+    color: #ffffff;
+    height: 70px;
+
+  }
+  body{
+      margin: 0px;
+    
+  }
+  
+*{ 
+box-sizing: border-box;
+}
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .9px;
+    
+    
+  }
+  button {
+    background-color: rgba(0, 213, 241, 0);
+    color: white;
+    float:right;
+    border: none;
+    cursor: pointer;
+    margin-right: 50px;
+    
+  }
+  .new_div{
+      margin-left: 50px;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  main{
+      min-height: 900px;
+  }
+  .footer
+  {
+      background-color: #0800007a;
+      color: rgba(235, 229, 229, 0.87);
+      height: 200px;
+      padding: 40px;
+  }
+  #yolo
+  {
+      float: left;
+      padding-left: 200px;
+  }
+  #dtt
+  {
+      padding-left: 40px;
+      padding-bottom: 5px;
+      font-size: 2em;
+  }
+  #dtt1
+  {
+      padding-left: 40px;
+      padding-bottom: 5px;
+      font-size: 2em;
+      position: absolute;
+      right: 250px;
+      padding-right:200px; 
+      
+  }
+  #main
+  { 
+     width: 800px;
+     height: 200px;
+     padding: 100px;
+     padding-right: 100px;
+     color: azure;
+    position: absolute;
+    left: 630px;
+    
+    }
+    h2
+    { 
+        font-size: 44px; line-height: 1.2em; font-weight: bold; margin-bottom: 20px;
+    }
+    #ul1{
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    dd{
+        font-size: 15px;
+    }
