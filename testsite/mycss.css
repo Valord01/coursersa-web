@@ -24,8 +24,20 @@ box-sizing: border-box;
     
     
   }
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  h2
+  {
+      color: #ffffff;
+  }
+  li
+  {
+      color: whitesmoke;
+  }
   button {
-    background-color: rgba(0, 213, 241, 0);
+    background-color: rgba(0, 128, 145, 0.993);
     color: white;
     float:right;
     border: none;
@@ -94,3 +106,16 @@ box-sizing: border-box;
     dd{
         font-size: 15px;
     }
+    #about
+    {
+        float: right;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: teal;
+        color: white;
+      }

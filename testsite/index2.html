@@ -12,7 +12,8 @@
   :root {
 	--ion-safe-area-top: 20px;
 	--ion-safe-area-bottom: 22px;
-
+	--ion-toolbar-background:teal;
+	--ion-toolbar-color:white;
 
 }
 
@@ -22,15 +23,11 @@
   window.menuController = menuController;
 </script>
 </head>
-	  <body>
-		<body style="background-image: url('https://valord01.github.io/coursersa-web/testsite/hi3.jpg'); background-size: 100%;"></body>
 		<ion-app>
 			
 			<ion-menu side="start" content-id="main-content">
 				<ion-header>
-				  <ion-toolbar style="--ion-toolbar-background:teal;
-				  --ion-toolbar-color:white;"
-			   translucent>
+				  <ion-toolbar translucent>
 					<ion-title>Menu</ion-title>
 				  </ion-toolbar>
 				</ion-header>
@@ -81,15 +78,10 @@
 					<ion-row>
 					  <ion-col class="ion-float-left" style="--ion-grid-column-padding:20px; color: white;">
 						<div>
-							<h1>Safeguard the future</h1>
-						  <p>The best way to <b>safeguard</b> your future. 
-							Built with the intention of helping you guarantee that
-							<b>your family and close ones</b>  will get your <b><i>final message</i></b> no matter what.
-							Help guarantee your families future and help maintain and organize your
-							present. 
-							Experience a fluid minimalistic approach like never before. 
-						    
-						</p>
+                        
+                        <a href="index.html">
+                            <img src="camp.jpg" alt="camp site">
+                            </a>
 						</div>
 					  </ion-col>
 					  <ion-col >
@@ -97,19 +89,27 @@
 						  
 						</div>
 					  </ion-col>
-					  <ion-col >
+					  <ion-col style="padding-top: 50px;">
 						<div>
-							<h2 style="padding-top: 250px;">Why For|You is for you ?</h2> 
-							
-							<ul>
-								<b>
-								<li>Easy to Use</li>
-								<li>Minimalistic</li>
-								<li>Future-Proof your life like never before</li>
-								<li>Secure and Reliable</li>
-								<li>Organise your life and goals</li>
-								</b>	
-							</ul>
+                            <h2 style="color: black;">Top Users this Month </h2>
+                            
+                            <table style="width:70%;">
+                                <tr>
+                                  <th>User-name</th>
+                                  <th>Last-name</th>
+                                  <th>Time spent</th>
+                                </tr>
+                                <tr>
+                                  <td>John</td>
+                                  <td>Legend</td>
+                                  <td>56.9 hrs</td>
+                                </tr>
+                                <tr>
+                                  <td>Marques</td>
+                                  <td>Da Vinci</td>
+                                  <td>73.5 hrs</td>
+                                </tr>
+                              </table> 
 						</div>
 					  </ion-col>
 					</ion-row>
