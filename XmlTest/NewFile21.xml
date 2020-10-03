@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="NewStylesheet.xsl"?>
+<tns:globalLibrary xmlns:tns="http://www.example.org/NewXMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/NewXMLSchema NewXMLSchema.xsd">
+
+  <tns:Libranian LibrID="idvalue0">
+    <tns:Firstname>tns:Firstname</tns:Firstname>
+    <tns:Lastname>tns:Lastname</tns:Lastname>
+    <tns:Nickname>tns:Nickname</tns:Nickname>
+    <tns:Post>1</tns:Post>
+    <tns:Desc_of_job>1</tns:Desc_of_job>
+    <tns:Qualification>1</tns:Qualification>
+    <tns:Salary>35000</tns:Salary>
+  </tns:Libranian>
+</tns:globalLibrary>
+
