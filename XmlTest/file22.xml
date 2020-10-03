@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="yo.xsl"?>
+  <yo>
+  <nian LibrID="idvalue0">
+    <Firstname>Firstname</Firstname>
+    <Lastname>Lastname</Lastname>
+    <Nickname>Nickname</Nickname>
+    <Post>1</Post>
+    <Desc_of_job>1</Desc_of_job>
+    <Qualification>1</Qualification>
+    <Salary>35000</Salary>
+  </nian>
+  </yo>

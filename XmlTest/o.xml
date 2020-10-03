@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="i.xsl"?>
+<Library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="lmsSchema.xsd">
+<Book>
+    <Title>Java</Title>
+    <Author>Oracle</Author>
+    <ISBN>12345</ISBN>
+    <Price>500</Price>
+</Book>
+<Librarian>
+    <Name>Yash Kataria</Name>
+    <Salary>10000</Salary>
+</Librarian>
+
+<Book>
+    <Title>C++</Title>
+    <Author>Oracle</Author>
+    <ISBN>54321</ISBN>
+    <Price>200</Price>
+</Book>
+<Librarian>
+    <Name>Praneet Kaisare</Name>
+    <Salary>20000</Salary>
+</Librarian>
+
+<Book>
+    <Title>Android</Title>
+    <Author>Google</Author>
+    <ISBN>67890</ISBN>
+    <Price>1000</Price>
+</Book>
+<Librarian>
+    <Name>Kishan Mistry</Name>
+    <Salary>30000</Salary>
+</Librarian>
+
+<Book>
+    <Title>Html,Css,Javascript</Title>
+    <Author>Oracle</Author>
+    <ISBN>09876</ISBN>
+    <Price>700</Price>
+</Book>
+<Librarian>
+    <Name>Pulkit Bhagwate</Name>
+    <Salary>40000</Salary>
+</Librarian>
+
+<Book>
+    <Title>ASP.NET</Title>
+    <Author>Microsoft</Author>
+    <ISBN>12378</ISBN>
+    <Price>500</Price>
+</Book>
+<Librarian>
+    <Name>Souvik Datta</Name>
+    <Salary>50000</Salary>
+</Librarian>
+
+<Book>
+    <Title>Java</Title>
+    <Author>Oracle</Author>
+    <ISBN>12345</ISBN>
+    <Price>500</Price>
+</Book>
+<Librarian>
+    <Name>Joswin Dsouza</Name>
+    <Salary>60000</Salary>
+</Librarian>
+
+</Library>
