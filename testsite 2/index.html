@@ -17,9 +17,17 @@
       <div id="header" class="header">
          <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
             <div class="container">
-               <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="#" /></a>
+               <a class="navbar-brand" id="logohome" ><img src="imgs/logo.png" alt="#" /></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
+               <span style="  margin: unset;
+               line-height: normal;
+               animation: none;
+               justify-content: unset;
+               align-items: none;
+               font-family: none;
+               font-size: unset;
+                                " 
+             class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="show-menu">
                   <ul class="navbar-nav ml-auto">
@@ -39,7 +47,7 @@
                         <a class="nav-link" href="#wcs">Testimonies</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="index2.html">Contact Us</a>
+                        <a class="nav-link" id="aboutus" href="#">Contact Us</a>
                      </li>
                      <li class="nav-item .search-container">
                         <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
@@ -129,15 +137,15 @@
             </div>
             <div class="row">
                <div class="col-md-4">
-                  <img class="margin_top_30 img-responsive" src="imgs/nav.png" alt="#" />
-                  <h3 id="hiww">Locate your area</h3>
+                  <img id="op" class="margin_top_30 img-responsive op"  src="imgs/nav.png" alt="#" />
+                  <h3 id="hiww">Locate your living area</h3>
                </div>
                <div class="col-md-4">
-                  <img class="margin_top_30 img-responsive" src="imgs/dccollage.jpg" alt="#" />
+                  <img id="op" class="margin_top_30 img-responsive op" src="imgs/dccollage.jpg" alt="#" />
                   <h3 id="hiww">Choose your new friend</h3>
                </div>
                <div class="col-md-4">
-                  <img class="margin_top_30 img-responsive" src="imgs/dinbox.jpg" alt="#"/>
+                  <img id="op" class="margin_top_30 img-responsive" src="imgs/dinbox.jpg" alt="#"/>
                   <h3 id="hiww">PICK transport OR pickup</h3>
                </div>
                
@@ -206,11 +214,11 @@
            
          <div class="row">
             <div class="col-md-12 mainsa">
-            <span>A</span>
-            <span>D</span>
-            <span class="letter"></span>
-            <span>P</span>
-            <span>T</span>
+            <span class="sp2">A</span>
+            <span class="sp2">D</span>
+            <span class="sp2 letter"></span>
+            <span class="sp2">P</span>
+            <span class="sp2">T</span>
             </div>
          </div>
          <div class="row">
@@ -275,27 +283,13 @@
          $(function () {
              
              'use strict';
-             
-             var winH = $(window).height();
-             
-             $('header').height(winH);  
-             
-             $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
-             
-             $('.navbar ul li a.search').on('click', function (e) {
-                 e.preventDefault();
-             });
-             $('.navbar a.search').on('click', function () {
-                 $('.navbar form').fadeToggle();
-             });
-             
-             $('.navbar ul.navbar-nav li a').on('click', function (e) {
-                 
-                 var getAttr = $(this).attr('href');
-                 
-                 e.preventDefault();
-                 $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
-             });
+         
+             document.getElementById("aboutus").onclick = function () {
+                location.href = "index2.html";
+                 };
+            document.getElementById("logohome").onclick = function () {
+                location.href = "index.html";
+                 };
          })
       </script>
    </body>
