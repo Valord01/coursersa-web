@@ -101,7 +101,7 @@ header {
 
 .service_blog h3.blog_head {
   float: left;
-  background: #4fcaff;
+  background: #61892f;
   text-align: center;
   font-size: 24px;
   text-transform: none;
@@ -124,7 +124,7 @@ header {
   display: block;
   position: absolute;
   right: -20px;
-  background: #4fcaff;
+  background: #61892f;
   top: 0;
   transform: skew(-30deg);
 }
@@ -164,13 +164,14 @@ nav.navbar {
   width: 100%;
   z-index: 1000;
   font-family: "Roboto", sans-serif;
-  background: #037d6f;
+  background: #222629;
   min-height: 95px;
 }
 
 nav.navbar a,
 nav.navbar ul li a {
-  color: #fff !important;
+  color: #61892f !important;
+  
 }
 
 nav.navbar ul li {
@@ -202,7 +203,7 @@ nav.navbar form input {
 
 .navbar-nav li a {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .layout_padding {
@@ -216,7 +217,7 @@ nav.navbar form input {
 }
 
 .about_section h4 {
-  color: #4fcaff;
+  color: #61892f;
   font-size: 18px;
   margin: 0;
 }
@@ -254,7 +255,7 @@ h3 {
 
 .contact-form {
   padding: 55px 65px;
-  background: #4fcaff;
+  background: #61892f;
   min-height: 600px;
   margin-top: 60px;
 }
@@ -482,7 +483,7 @@ h3.blog_head {
 .blue_bt {
   width: 255px;
   height: 58px;
-  background: #4fcaff;
+  background: #86c232;
   color: #fff;
   float: left;
   text-align: center;
@@ -494,11 +495,20 @@ h3.blog_head {
 .blue_bt:hover,
 .blue_bt:focus {
   background: #fff;
-  color: #037d6f;
+  color: #222629;
 }
 img.margin_top_30 {
   height: 350px;
   width: 100%;
+}
+/* hiw*/
+#hiww{
+    font-size: large;
+    text-align: center;
+    background-color: #222629;
+    color: #86c232;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 /* services */
 
@@ -617,7 +627,7 @@ img.margin_top_30 {
 }
 
 .ovarlay_slide_cont h4 {
-  color: #4fcaff;
+  color: #61892f;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
@@ -632,6 +642,15 @@ img.margin_top_30 {
   font-size: 21px;
   padding: 0 75px 0 0;
   line-height: 28px;
+}
+/* youtube */
+#service{
+    background-color: #222629;
+    color: white;
+}
+#service1
+{
+    color: #86c232;
 }
 
 /* contact */
@@ -692,11 +711,11 @@ footer a {
 footer {
   display: block;
   overflow: hidden;
-  background-color: #037d6f;
+  background-color: #222629;
 }
 
 footer a:hover {
-  color: #4fcaff;
+  color: #61892f;
 }
 
 footer .container > ul {
@@ -768,7 +787,7 @@ h4.a{
     color: #10d0e7;
   }
  iframe{
-    height: 800px;
+    height: 600px;
     width: 1200px;
     
 }
@@ -849,7 +868,7 @@ h4.a{
   /* navbar */
 
   .navbar ul {
-    background-color: #4fcaff;
+    background-color: #61892f;
   }
   .navbar ul li {
     margin: 10px 0;
@@ -969,10 +988,10 @@ h4.a{
 }
 
 .testimonial_blog {
-  background: #037d6f;
+  background: #222629;
   width: 100%;
   padding: 40px 50px;
-  box-shadow: 50px 50px 0 0 #4fcaff;;
+  box-shadow: 50px 50px 0 0 #86c232;;
 }
 
 .testimonial_blog p {
@@ -989,7 +1008,7 @@ h4.a{
 }
 
 .subcribe {
-  background: #037d6f;
+  background: #222629;
   padding: 80px 0;
 }
 
@@ -1056,7 +1075,7 @@ footer .item p {
 
 footer .copyright {
   padding: 15px 0 16px;
-  border-top: solid #10d0e7 1px;
+  border-top: solid #86c232 1px;
   margin-top: 30px;
 }
 
@@ -1070,7 +1089,7 @@ footer .item p strong {
 footer {
   display: block;
   overflow: hidden;
-  background-color: #037d6f;
+  background-color: #222629;
   padding: 90px 0 0;
 }
 
@@ -1087,14 +1106,14 @@ footer .item h4 {
 
 .navbar-light .navbar-toggler {
   color: #000;
-  background: #4fcaff;
+  background: #61892f;
   width: 50px;
   padding: 0;
   height: 45px;
   border: none;
 }
 div.subcribe {
-  background-color: #037d6f;
+  background-color: #222629;
 }
 
 
@@ -1136,7 +1155,7 @@ div.subcribe {
   }
 
   .about_section h4 {
-    color: #4fcaff;
+    color: #61892f;
     font-size: 16px;
     margin: 0;
   }
@@ -1156,7 +1175,7 @@ div.subcribe {
 
   .service_blog h3.blog_head {
     float: left;
-    background: #4fcaff;
+    background: #61892f;
     text-align: center;
     font-size: 18px;
     text-transform: none;
@@ -1180,14 +1199,14 @@ div.subcribe {
     display: block;
     position: absolute;
     right: -35px;
-    background: #4fcaff;
+    background: #61892f;
     top: 0;
     transform: skew(-30deg);
   }
 
   .contact-form {
     padding: 40px 50px;
-    background: #4fcaff;
+    background: #61892f;
     min-height: 600px;
     margin-top: 60px;
   }
@@ -1238,7 +1257,7 @@ div.subcribe {
 
   .service_blog h3.blog_head {
     float: left;
-    background: #4fcaff;
+    background: #61892f;
     text-align: center;
     font-size: 22px;
     text-transform: none;
@@ -1256,7 +1275,7 @@ div.subcribe {
 
   .contact-form {
     padding: 35px 40px;
-    background: #4fcaff;
+    background: #61892f;
     min-height: 600px;
     margin-top: 20px;
   }
@@ -1273,7 +1292,7 @@ div.subcribe {
     background: #a1a1a1;
     width: 100%;
     padding: 30px 30px;
-    box-shadow: 10px 10px 0 0 #4fcaff;
+    box-shadow: 10px 10px 0 0 #61892f;
   }
 
   .testimonial_blog p:first-child {
@@ -1287,7 +1306,7 @@ div.subcribe {
     font-weight: 300;
   }
   div.subcribe {
-    background-color: #037d6f;
+    background-color: #222629;
   }
 
   .subcribe form {
