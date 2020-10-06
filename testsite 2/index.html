@@ -114,12 +114,26 @@
             <div class="row">
                <div class="col-md-5">
                   <h4>ABOUT GET_A_PET</h4>
-                  <h3 style="text-transform: none !important; color:#86c232;">We get your future Pet to you.</h3>
-                  <p style="color: white; text-align: justify;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <h3 style="text-transform: none !important; color:#86c232;">ABOUT US</h3>
+                  <p id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at diam nisl. Nullam nec facilisis nisi. Praesent sit amet risus vestibulum, volutpat nisi at, placerat lacus. Nulla ac molestie dolor. Nulla facilisi. Aliquam sapien massa, interdum pellentesque posuere lacinia, convallis ac turpis. Phasellus massa libero, elementum nec tristique in, vehicula vel quam. Nunc euismod iaculis tortor, non auctor augue fermentum et. Aliquam erat volutpat. Vivamus fringilla dictum felis sit amet condimentum. Aliquam erat volutpat. Maecenas hendrerit dignissim placerat. </p>
+                  <h3 style="text-transform: none !important; color:#86c232;">Why Choose Us ?</h3>
+                  <p style="margin-top:-20px;" ><ol class="lim2">
+                     <li class=" g2 lim2">Minimalistic Experience</li>
+                     <li class="g2 lim2">Easy to use Interface</li>
+                     <li class="g2 lim2">All pets vaccinated</li>
+                     <li class="g2 lim2">1000s of pets available</li>
+                     <li class="g2 lim2">Locations accross 50 cities</li>
+                     <li class="g2 lim2">Pet store with all you need</li>
+                     <li class="g2 lim2">Intstant paytment methods</li>
+                     <li class="g2 lim2">Unmatched security</li>
+                     <li class="g2 lim2">Delivered within 7 days</li>
+                       
+                  </ol></p>
+
                </div>
                <div class="col-md-6 offset-md-1">
                   <div class="full text_align_center">
-                     <img class="img-responsive" src="imgs/about2.jpg" alt="#" />
+                     <img class="img-responsive about2" src="imgs/about22.jpg" alt="#" />
                   </div>
                </div>
             </div>
@@ -148,8 +162,6 @@
                   <img id="op" class="margin_top_30 img-responsive" src="imgs/dinbox.jpg" alt="#"/>
                   <h3 id="hiww">PICK transport OR pickup</h3>
                </div>
-               
-               
             </div>
          </div>
 
@@ -274,7 +286,8 @@
             </div>
          </div>
          <div class="copyright text-center">
-            <p>Copyright ... <a href="#"></a></p>
+            <p>Copyright ... <a href="#"> </a></p>
+            <audio id="my_audio" class="" src="imgs/sad audio.mp3" loop="loop"></audio>
          </div>
       </footer>
       <script src="js/jquery-3.3.1.min.js"></script>
@@ -282,8 +295,10 @@
       <script>
          $(function () {
              
-             'use strict';
-         
+             
+            window.onload = function() {
+    document.getElementById("my_audio").play();
+};
              document.getElementById("aboutus").onclick = function () {
                 location.href = "index2.html";
                  };
