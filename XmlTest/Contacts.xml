@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="contacts.xsl"?>
+<Contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="contacts.xsd"> 
+	
+	<Employee EMPID="idvlaue0">
+	
+		<name>Karen Diya</name>
+		<location>Banglore</location>
+		<as>400</as>
+		<phone>9494561234</phone>
+
+	</Employee>
+<Employee EMPID="idvlaue1">
+	
+		<name>Edward D'souza</name>
+		<location>Mumbai</location>
+		<as>105</as>
+		<phone>9492222354</phone>
+
+	</Employee>
+<Employee EMPID="idvlaue3">
+	
+		<name>Rohan Matthew</name>
+	   <location>Goa</location>
+		<as>900</as>
+		<phone>7798912333</phone>
+
+	</Employee>
+<Employee EMPID="idvlaue4">
+	
+		<name>Ishita Srivastava</name>
+		<location>Delhi</location>
+		<as>250</as>
+		<phone>9087650665</phone>
+
+	</Employee>
+</Contacts>

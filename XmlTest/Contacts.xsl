@@ -1,0 +1,289 @@
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+  <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <title>GetAPet</title></meta>
+      <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+      <link rel="stylesheet" href="css/style.css"></link>
+      <link rel="stylesheet" href="css/fontawesome.min.css"></link>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"></link>
+     
+   </head>
+
+
+   
+   <body>
+      <div id="header" class="header">
+         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+               <a class="navbar-brand" id="logohome" ><img src="imgs/logo.png" alt="#" /></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="show-menu">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#hiw">How it's Works</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#wcs">Testimonies</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index2.html">Contact Us</a>
+                     </li>
+                     <li class="nav-item .search-container">
+                        <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
+                        <form>
+                           <input type="search" placeholder="Search"></input>
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <div id="home" class="slider">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+               <li data-target="#main_slider" data-slide-to="1"></li>
+               <li data-target="#main_slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="d-block w-100" src="imgs/dc.jpg" alt="slider_img"></img>
+                  <div class="ovarlay_slide_cont">
+                     <h2>we Love Animals</h2>
+                     <h4>and they need us</h4>
+                     <p>Now more than ever is the need to take care of our friends. Adopt a pet a today. Get yourself a loyal friend. A friend who'll always be there for you. A friend that knowns nothing but love. Get yourself the companion you deserve.</p>
+                     <a class="blue_bt" href="#">See Our Service</a>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="imgs/cat.jpg" alt="slider_img"></img>
+                  <div class="ovarlay_slide_cont">
+                     <h2>we Love Animals</h2>
+                     <h4>and they need us</h4>
+                     <p>Now more than ever is the need to take care of our friends. Adopt a pet a today. Get yourself a loyal friend. A friend who'll always be there for you. A friend that knowns nothing but love. Get yourself the companion you deserve.</p>
+                     <a class="blue_bt" href="#">See Our Service</a>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="imgs/dc2.jpg" alt="slider_img"></img>
+                  <div class="ovarlay_slide_cont">
+                     <h2>we Love Animals</h2>
+                     <h4>and they need us</h4>
+                     <p>Now more than ever is the need to take care of our friends. Adopt a pet a today. Get yourself a loyal friend. A friend who'll always be there for you. A friend that knowns nothing but love. Get yourself the companion you deserve.</p>
+                     <a class="blue_bt" href="#">See Our Service</a>
+                  </div>
+               </div>
+               
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <img src="imgs/left.png" alt="#" />
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <img src="imgs/right.png" alt="#" />
+            </a>
+         </div>
+      </div>
+
+
+
+
+      <div id="about" style="background-color: #222629;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-7">
+                  <h4>Locations of GET_A_PET</h4>
+                  <h3 class="cg2" style="text-transform: none !important">Reach Us:</h3>
+                 
+<ol class="lim">
+   <li class=" g2 lim">Buldg No 45., Shree Jee Bhuvan, Mangaldas Rd, Lohar. Chawl, Mumbai</li>
+   <li class="g2 lim">1008 10th Floor, 27 New Delhi House, Barakhamba Road, Delhi</li>
+   <li class="g2 lim">Basement Krishna Palace, Delhi</li>
+   <li class="g2 lim">A 107/109, Noida, Noida, Delhi</li>
+ </ol>
+ 
+ 
+               </div>
+               <div class="col-md-4 offset-md-1">
+                  <div class="full text_align_center">
+                     <img class="img-responsive" style="margin-top: 30px;" src="imgs/dogshelter.jpg" alt="#" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div  id="service" style="background-image: url(imgs/gra2.png);
+      background-position: bottom; background-repeat: no-repeat ; background-position-x: center; padding-bottom: 100px; " class="hiw_section layout_padding2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h3 class="cg2" style="text-transform: none !important">Contact Us:</h3>
+                  <p  id="service">
+                  <table style="width:100%">
+      			<tr>
+				  
+					<th>Executive Name</th>
+        			<th>Location</th>
+        			<th>Animals Saved</th>
+        			<th>Phone Number</th>
+      			</tr>
+      			<xsl:for-each select="Contacts/Employee">
+	        		<tr>
+			
+	          			<td><xsl:value-of select="name"/></td>
+	          			<td><xsl:value-of select="location"/></td>
+	          			<td><xsl:value-of select="as"/></td>
+	          			<td><xsl:value-of select="phone"/></td>
+		
+	        		</tr>
+      			</xsl:for-each>
+    		</table>
+
+                  </p>
+               </div>
+            </div>
+            
+                 
+         </div>
+         </div>
+      
+
+
+     
+      <div id="wcs" class="hiw_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text_align_center">
+                  <h3>What people are saying</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis sem, lacinia vitae felis sit amet, eleifend suscipit elit. Nullam</p>
+               </div>
+               <div class="col-md-5">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-11">
+                  <div class="full testimonial_blog">
+                     <p>Prerna Dessai</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis sem, lacinia vitae felis sit amet, eleifend suscipit elit. Nullam ullamcorper ligula nisl, ac maximus tortor venenatis sed. Cras ultricies urna libero, sit amet tristique lacus varius eget. Nulla facilisi. Aenean malesuada, diam feugiat tristique viverra, tellus mauris mollis diam, ac dapibus dui ex in ligula. Aenean ultricies pulvinar erat non lacinia. Phasellus ullamcorper neque et quam maximus, ultricies commodo eros ornare. Cras placerat urna et malesuada bibendum. Vestibulum tristique, magna id luctus viverra, libero sem rutrum lectus, eu blandit purus ligula lobortis augue.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="subcribe">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <h3>Newsletter</h3>
+                  <p>Subscribe to our Newsletter to get weekly updates. Stories of all over India.</p>
+               </div>
+               <div class="col-md-8 col-sm-6">
+                  <form>
+                     <input type="email" name="email" placeholder="Enter Your Email Address" />
+                     <button>Subscribe</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+           
+         <div class="row">
+            <div class="col-md-12 mainsa">
+               <p>
+            <span>A</span>
+            <span>D</span>
+            <span class="letter"></span>
+            <span>P</span>
+            <span>T</span>
+         </p>   
+         </div>
+         </div>
+         <div class="row">
+            
+            <div class="col-md-12 mainsa2">
+            <p>TODAY</p>
+            </div>
+            
+         </div>
+         
+      </div>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="footer_blog_section">
+                     <img src="imgs/logo.png" alt="#" />
+                     <p style="margin-top: 5px;">It is a long established fact that a reader will be distracted by the readable content..</p>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Navigation</h4>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Features</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Contact Info</h4>
+                     <p><img style="height: 24px; width:24px; margin-top: -3px;" src="imgs/navi.png" alt="#"/>
+                        <strong> Main office Address:</strong>
+                     </p>
+                     <p>  H.No 126 Panaji Bardez 403507 Goa</p>
+                     <p><img style="height: 22px; width:22px; margin-top: -3px;" src="imgs/phone.png" alt="#"></img></p><p>
+                        <strong>Customer Service:</strong>
+                      </p>
+                     <p>  9284472300</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Discover</h4>
+                     <ul class="dll" >
+                        <li><a  href="#">Help</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright text-center">
+            <p>Copyright ... <a href="#"></a></p>
+         </div>
+      </footer>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(function () { 
+             document.getElementById("logohome").onclick = function () {
+                location.href = "index.html";
+                 };
+         })
+      </script>
+   </body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
