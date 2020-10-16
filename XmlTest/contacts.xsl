@@ -139,7 +139,7 @@
 				  
 					<th>Executive Name</th>
         			<th>Location</th>
-        			<th>Animals Saved</th>
+        			<th>Customers Served</th>
         			<th>Phone Number</th>
       			</tr>
       			<xsl:for-each select="Contacts/Employee">
