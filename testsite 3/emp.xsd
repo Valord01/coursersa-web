@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Company">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Employee" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Emp-name" type="xs:string"/>
+							<xs:element name="Emp-age" type="xs:integer"/>
+							<xs:element name="Emp-salary" type="msi0"/>
+							<xs:element name="Emp-emailid" type="msi1"/>
+							<xs:element name="Emp-Phonenum" type="msi2"/>
+							<xs:element name="Emp-designation" type="xs:string"/>
+						</xs:sequence>
+						<xs:attribute name='EMPID' type="xs:ID" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="msi0">
+		<xs:restriction base="xs:integer">
+			<xs:minExclusive value="50000"/>
+			<xs:maxExclusive value="200000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="msi2">
+		<xs:restriction base="xs:integer">
+			<xs:minExclusive value="999999999"/>
+			<xs:maxExclusive value="10000000000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="msi1">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[^@]+@[^\.]+\..+"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

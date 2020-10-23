@@ -9,6 +9,75 @@
 .g2{
   color: #6b6e70;
 }
+/*form*/
+.b2{
+  background-color: #222629;
+  color: #fff;
+ 
+}
+.wb{
+  color: #86c232;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.gb{
+  color: #222629;
+  background-color: #86c232;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+input.gb[type=text]:focus{
+  border-bottom: 2px solid #222629;
+  background-color: #86c232;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+  border-top: none;     /* oranges! yey */
+}
+input.wb[type=text]:focus{
+  border-bottom: 2px solid #222629;
+  background-color: #fff;
+  box-shadow: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;     /* oranges! yey */
+}
+.olb{
+  border-bottom: solid black 1px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0px;
+  padding-left: 5px !important;
+}
+.rrl{
+  border-top-left-radius: 10px;
+  margin-top: 20px;
+  padding-top: 50px;
+
+}
+.rrr{
+  border-top-right-radius: 10px;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+.rrbl{
+  border-bottom-left-radius: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 120px;
+}
+.rrbr{
+  border-bottom-right-radius: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 120px;
+
+}
+.pp{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/*form end*/
 /* animation */
 .mainsa2 {
   display: flex;

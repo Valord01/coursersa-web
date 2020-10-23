@@ -1,0 +1,26 @@
+
+* {
+  box-sizing: border-box;
+}
+.cg2
+{
+  color: #86c232;
+}
+
+table{
+  border: 2px solid #86c232;
+  border-collapse: collapse;
+}
+th{
+  color: #6b6e70;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-left: 6px;
+  border: 2px solid #86c232;
+}
+td{
+  color: #6b6e70;
+  padding-left: 6px;
+  border: 2px solid #86c232;
+
+}

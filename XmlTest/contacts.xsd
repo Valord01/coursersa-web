@@ -11,7 +11,6 @@
 				        <xs:element name="location" type="xs:string"/>
 				        <xs:element name="as" type="msi"/>
 				        <xs:element name="phone" type="xs:integer"/>
-				
 				    </xs:sequence>
 					<xs:attribute name = 'EMPID' type ="xs:ID" use="required"/>
 				</xs:complexType>
