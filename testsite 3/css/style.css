@@ -6,7 +6,10 @@
 {
   color: #86c232;
 }
-
+.bg2
+{
+  background-color: #222629;
+}
 table{
   border: 2px solid #86c232;
   border-collapse: collapse;

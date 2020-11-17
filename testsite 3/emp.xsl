@@ -12,11 +12,11 @@
 				<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
 			</head>
 			<body>
-		
-					<div class="container">
-						<div class="row">
+				<div class="container">
+					<div class="row">
+						<div class="bg2">
 							<div class="col-md-12">
-								<h3 class="cg2" style="text-transform: none !important; margin-top:100px" >Employee Management System:</h3>
+								<h3 class="cg2" style="text-transform: none !important; margin-top:100px">Employee Management System:</h3>
 								<p id="service">
 									<table style="width:100%">
 										<tr>
@@ -53,19 +53,17 @@
 												<td>
 													<xsl:value-of select="Emp-designation"/>
 												</td>
-												
-													<xsl:choose>
-														<xsl:when test="Emp-age >= 50">
-															<td>Associate Project Manager</td>
-														</xsl:when>
-														<xsl:when test="Emp-age >= 40">
-															<td>Team Leader</td>
-														</xsl:when>
-														<xsl:otherwise>
-															<td>Developer</td>
-														</xsl:otherwise>
-													</xsl:choose>
-												
+												<xsl:choose>
+													<xsl:when test="Emp-age >= 50">
+														<td>Associate Project Manager</td>
+													</xsl:when>
+													<xsl:when test="Emp-age >= 40">
+														<td>Team Leader</td>
+													</xsl:when>
+													<xsl:otherwise>
+														<td>Developer</td>
+													</xsl:otherwise>
+												</xsl:choose>
 											</tr>
 										</xsl:for-each>
 									</table>
@@ -73,8 +71,7 @@
 							</div>
 						</div>
 					</div>
-				
-				
+				</div>
 			</body>
 		</html>
 	</xsl:template>
