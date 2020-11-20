@@ -9,41 +9,6 @@
 .g2{
   color: #6b6e70;
 }
-/*parselet*/
-input.parsley-success,
-select.parsley-success,
-textarea.parsley-success {
-  /*color: #468847;
-  background-color: #86c232;*/
- 
-}
-
-input.parsley-error,
-select.parsley-error,
-textarea.parsley-error {
-  color: #8d1210;
-
-}
-
-.parsley-errors-list {
-  margin: 2px 0 3px;
-  padding: 0;
-  list-style-type: none;
-  font-size: 0.9em;
-  line-height: 0.9em;
-  opacity: 0;
-  color: #B94A48;
-
-  transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-}
-
-.parsley-errors-list.filled {
-  opacity: 1;
-}
-/*parselet*/
 /*form*/
 .b2{
   background-color: #222629;
@@ -68,12 +33,7 @@ input.gb[type=text]:focus{
   border-left: none;
   border-right: none;
   box-shadow: none;
-  border-top: none;    
-
-}
-  
-  
-  /* oranges! yey */
+  border-top: none;     /* oranges! yey */
 }
 input.wb[type=text]:focus{
   border-bottom: 2px solid #222629;
@@ -116,18 +76,6 @@ input.wb[type=text]:focus{
 .pp{
   padding-left: 50px;
   padding-right: 50px;
-}
-input.wb:-webkit-autofill {
-box-shadow: 0 0 0 30px#fff inset !important;
-}
-input.wb:-webkit-autofill {
--webkit-text-fill-color: #86c232 !important;
-}
-input.gb:-webkit-autofill {
-box-shadow: 0 0 0 30px  #86c232 inset !important;
-}
-input.gb:-webkit-autofill {
--webkit-text-fill-color:#000 !important;
 }
 /*form end*/
 /* animation */

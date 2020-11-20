@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LaStoffa Registration form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+<script>
+
+
+// Defining a function to validate form 
+function validateForm() {
+    // Retrieving the values of form elements 
+    var name = document.contactForm.name.value;
+    var email = document.contactForm.email.value;
+    var mobile = document.contactForm.mobile.value;
+    var country = document.contactForm.country.value;
+    var gender = document.contactForm.gender.value;
+    var file = document.contactForm.file.value;
+    // Defining error variables with a default value
+    var nameErr = emailErr = mobileErr = countryErr = genderErr = fileErr =true;
+    
+    // Validate name
+    if (name == "") {   
+             alert("Name required. Please enter your name");  
+                return false;     
+            }   
+            if(name.length<5){  
+                alert("Username should be atleast 5 characters");  
+                return false;  
+            }  
+    
+    // Validate email address
+    at = email.indexOf("@");      
+         dot = email.lastIndexOf(".");      
+           
+         if (at < 1 || ( dot - at < 2 )) {         
+            alert("Incorrect Email-ID");          
+            return false;      
+         }  
+         
+    // Validate mobile number
+    if (mobile == "") {   
+             alert("Mobile number is required");  
+                return false;     
+            }   
+            if(mobile.length<10 || mobile.length>10){  
+                alert("Mobile number should be of 10 digits");  
+                return false;  
+            }  
+    
+    
+    
+    // Validate country
+    if(country == "Please select a country") {
+        alert("Please select your country");
+        return false;
+    }
+    // Validate gender
+    if(gender == "") {
+        alert( "Please select your gender");
+        return false;
+    } 
+    //validate file upload
+    if(file == "") {
+        alert("Please select your file");
+        return false;
+    } 
+    
+    // Prevent the form from being submitted if there are any errors
+    if((name || email || mobile || country|| gender || file) == true) {
+       return false;
+    } else {
+        // Creating a string from input data for preview
+        var dataPreview = "You've entered the following details: \n" +
+                          "Full Name: " + name + "\n" +
+                          "Email Address: " + email + "\n" +
+                          "Mobile Number: " + mobile + "\n" +
+                          "Country: " + country + "\n" +
+                          "Gender: " + gender + "\n"
+                          "Image : Selected" + file + "\n";
+        // Display input data in a dialog box before submitting the form
+        alert(dataPreview);
+    }
+ };
+</script>
+</head>
+<body>
+
+
+  
+    <div class="title">
+        <h1> LA STOFFA </h1>
+        
+      </div>
+  
+     <div class="loginbox">
+    <img src="1.png" class="avatar">
+  
+     <h1>Your stylist is just around the corner....</h1>
+  
+
+
+<form name="contactForm" onsubmit="return validateForm()" action="home.html" method="post">
+    
+    <div class="row">
+        
+        <input placeholder="Full Name" type="text" name="name">
+        <div class="error" id="name"></div>
+     </div>
+    <div class="row">
+      
+        <input placeholder="Email Address" type="text" name="email">
+        <div class="error" id="email"></div>
+    </div>
+    <div class="row">
+        
+        <input placeholder="Mobile Number" type="number" name="mobile" maxlength="10">
+        <div class="error" id="mobile"></div>
+    </div> <br>
+
+
+    <div class="row1">
+        <label><b>Country:</b></label>&nbsp;&nbsp;
+        <select  id ="demo" name="country" onchange="show()">
+            <option>Please select a country</option>
+            <option>Australia</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+         </select>
+         <div class="error" id="country"></div>
+         </div>&nbsp; 
+
+     <div class="gender"> 
+        <label> <p>Gender: </p></label> &nbsp;
+        <div class="form-inline" align="left">
+            <label> Male <span lang="en-in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span> 
+            <input style="padding-right: -300px; width: 72%;" type="radio" name="gender" value="male"><br>
+            Femal<span lang="en-in">e</span> <input style="padding-right: -300px ;" type="radio" name="gender" value="female"> </label>
+         </div>
+         <div class="error" id="gender"></div>
+          </div> 
+
+     <p>Upload an Image</p>
+     <input type="file" id="file" name="file"
+        onchange="return fileValidation()" /> 
+
+
+
+
+        <div id="file"></div> 
+        <script> 
+            function fileValidation() { 
+                var fileInput =  
+                    document.getElementById('file'); 
+                  
+                var filePath = fileInput.value; 
+              
+                // Allowing file type 
+                var allowedExtensions =  
+                        /(\.jpg|\.jpeg|\.png|\.gif)$/i; 
+                  
+                if (!allowedExtensions.exec(filePath)) { 
+                    alert('Invalid file type'); 
+                    fileInput.value = ''; 
+                    return false; 
+                }  
+                else  
+                { 
+                   reader.readAsDataURL(fileInput.files[0]); 
+                    } 
+                } 
+        </script> 
+
+
+    <div class="button">
+        <a href="home.html">
+        <input type="submit" value="Submit"></a>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="reset" value="Reset"></a>
+
+       <script>
+
+function ssetCookie()
+        {  console.log("yoooooooooooooooooooooooooooooooooo"); 
+           let zip=document.basic.name.value;
+            let ad1=document.basic.email.value;
+            let ad2=document.basic.mobile.value;
+            let fn=document.basic.country.value;
+            let ln=document.basic.gender.value;
+            let em=document.basic.file.value;
+            
+            var cars = [zip,ad1,ad2,fn,ln,em];
+            var cars1 = ["zip","ad1","ad2","fn","ln","em"];
+            fLen = cars.length;
+for (i = 0; i < fLen; i++) {
+  console.log(cars[i]);
+  document.cookie=cars1[i]+"="+cars[i];
+} 
+           
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+   console.log("i got called");
+   var cars2 = ["zip","ad1","ad2","fn","ln","em"];
+  for(i=0;i<cars2.length;i++)
+{  var c=getCookie(cars2[i]);
+
+  if (c != "") {
+   $('form').find("input[id="+cars2[i]+"]").each(function(ev)
+  {
+      if(!$(this).val()) { 
+     $(this).attr("value", c);
+  }
+  });
+  /*
+    document.getElementById(cars2[i]).attr.value=c;*/
+  } else { console.log("didnt get data");}
+ }
+}
+
+
+
+
+
+       </script>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Contacts">
+	<xs:complexType>
+	    <xs:sequence>
+	        <xs:element name="Employee" maxOccurs="unbounded">
+	        	<xs:complexType>
+				    <xs:sequence>
+						<xs:element name="name" type="xs:string"/>
+				        <xs:element name="location" type="xs:string"/>
+				        <xs:element name="as" type="msi"/>
+				        <xs:element name="phone" type="xs:integer"/>
+				    </xs:sequence>
+					<xs:attribute name = 'EMPID' type ="xs:ID" use="required"/>
+				</xs:complexType>
+	        </xs:element>
+	    </xs:sequence>
+	</xs:complexType>
+</xs:element>
+ <xs:simpleType name="msi">
+  <xs:restriction base="xs:integer">
+  <xs:minExclusive value="100"></xs:minExclusive>
+   <xs:maxExclusive value="1000"></xs:maxExclusive>
+  </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

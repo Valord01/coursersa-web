@@ -2,24 +2,13 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>GetAPet</title>
-      <script src="srjs.js"></script>
-      <script src="js/jquery-3.3.1.min.js"></script>
-      <script src="js/parsley.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-     
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/fontawesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  
-      
-      <!-- Font-->
-      <link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
-      <link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-      <!-- Main Style Css -->
-      <link rel="stylesheet" href="css/index3.css"/>
+     
    </head>
 
 
@@ -71,102 +60,132 @@
             </div>
          </nav>
       </div>
-      <div class="copyright text-center">
-        <p>Copyright ... <a href="#"> </a></p>
-        
-     </div>
-    
-        <div class="b2">  
-            <div class="container"> 
-            <h3 style="color: #86c232; font-size: 3em;">Register Today</h3>
-            <form  class="custom-form" name="basic" data-parsley-validate="" data-parsley-trigger="keyup">  
-               <div class="form-right">
-                
-                <div class="row">
-                
-                <div class="col-md-6 wb rrl pp"> 
-                <h2 style="padding-bottom: 25px;  font-size:1.7em">General information</h2>       
-                     
-                   <input placeholder="Email"  type="email" class="form-control olb wb" name="email" required="" id="em">
-                </div> 
-                
-                <div class="col-md-6 gb rrr pp"> 
-                    <h2 style="padding-bottom: 25px; font-size:1.7em">Contact details</h2> 
-                    <input class="olb form-control gb" name="yolo" id="ad1" placeholder="Address line 1"	type="text"  data-parsley-length="[10, 50]" data-parsley-group="block1" required="">
-                </div> 
-                </div>
-                <div class="row">
-                   
-                    <div class="col-md-3 wb pp"> 
-                           
-                     
-                     <input type="text" class="form-control olb wb" name="yolo" data-parsley-length="[1, 50]" data-parsley-group="block1" required=""  placeholder="First Name"
-                        >
-                    </div> 
-                    <div class="col-md-3 wb pp"> 
-                           
-                        
-                        <input type="text" class="form-control olb wb" name="lastname" data-parsley-length="[1, 50]" data-parsley-group="block1" id="ln" required="">
-                    </div> 
-                    <div class="col-md-6 gb pp"> 
-                           
-                        <input class="olb form-control gb" name="yolo" id="ad1" placeholder="Address line 2"	type="text"  data-parsley-length="[10, 50]" data-parsley-group="block1" required="">
-                    </div> 
-                    </div>
-                    <div class="row">
-                   
-                        <div class="col-md-6 wb pp"> 
-                               
-                            
-                            <input type="digit" class="form-control olb wb" name="yolo" placeholder="Phone Number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" data-parsley-group="block1" required="" id="pn">
-                        </div> 
-                        
-                        <div class="col-md-6 gb pp"> 
-                               
-                            <input class="olb form-control gb" type="text" name="yolo" id="yo1" placeholder="Country" required="">
-                            
-                            
-                        </div> 
-                        </div>
-                        <div class="row">
-                   
-                            <div class="col-md-6 wb pp"> 
-                                   
-                                <input class="olb form-control wb" type="text" name="yolo" data-parsley-group="block1" placeholder="User Interest" id="yo1">
-                            </div> 
-                            
-                            <div class="col-md-3 gb pp"> 
-                                   
-                                <input class="olb form-control gb" data-parsley-type="digits" name="yolo" pattern="^\d{6}$"  id="zip" data-parsley-group="block1" placeholder="Zipcode" required=""> 
-                            </div> 
-                            <div class="col-md-3 gb pp"> 
-                                   
-                                <input class="olb form-control gb" type="text" name="yolo" id="yo1" placeholder="State" required="" data-parsley-group="block1">
-                            </div>
-                            </div>
-
-                            
-                                    <div class="row">
-                   
-                                        <div class="col-md-6 wb rrbl pp"> 
-                                               
-                                            <input class="olb form-control wb" type="text" name="yolo" placeholder="User Type" id="yo1" data-parsley-group="block1">
-                                        </div> 
-                                        
-                                        <div class="col-md-6 gb rrbr pp"> 
-                                               
-                                           
-                                            <button type="submit" style="margin-top: 8px;" class="btn btn-primary">Register</button>
-                                        </div> 
-                                        
-                                        </div>
-
-            </div></form>
-           
-
+      <div id="home" class="slider">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+               <li data-target="#main_slider" data-slide-to="1"></li>
+               <li data-target="#main_slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="d-block w-100" src="imgs/dc.jpg" alt="slider_img">
+                  <div class="ovarlay_slide_cont">
+                     <h2>we Love Animals</h2>
+                     <h4>and they need us</h4>
+                     <p>Now more than ever is the need to take care of our friends. Adopt a pet a today. Get yourself a loyal friend. A friend who'll always be there for you. A friend that knowns nothing but love. Get yourself the companion you deserve.</p>
+                     <a class="blue_bt" href="#">See Our Service</a>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="imgs/cat.jpg" alt="slider_img">
+                  <div class="ovarlay_slide_cont">
+                     <h2>we Love Animals</h2>
+                     <h4>and they need us</h4>
+                     <p>Now more than ever is the need to take care of our friends. Adopt a pet a today. Get yourself a loyal friend. A friend who'll always be there for you. A friend that knowns nothing but love. Get yourself the companion you deserve.</p>
+                     <a class="blue_bt" href="#">See Our Service</a>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="imgs/dc2.jpg" alt="slider_img">
+                  <div class="ovarlay_slide_cont">
+                     <h2>we Love Animals</h2>
+                     <h4>and they need us</h4>
+                     <p>Now more than ever is the need to take care of our friends. Adopt a pet a today. Get yourself a loyal friend. A friend who'll always be there for you. A friend that knowns nothing but love. Get yourself the companion you deserve.</p>
+                     <a class="blue_bt" href="#">See Our Service</a>
+                  </div>
+               </div>
+               
             </div>
-        </div>
-    
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <img src="imgs/left.png" alt="#" />
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <img src="imgs/right.png" alt="#" />
+            </a>
+         </div>
+      </div>
+
+
+
+
+      <div id="about2" class="about_section layout_padding" style="background: #222629;" >
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                  <h4>ABOUT GET_A_PET</h4>
+                  <h3 style="text-transform: none !important; color:#86c232;">ABOUT US</h3>
+                  <p id="about22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at diam nisl. Nullam nec facilisis nisi. Praesent sit amet risus vestibulum, volutpat nisi at, placerat lacus. Nulla ac molestie dolor. Nulla facilisi. Aliquam sapien massa, interdum pellentesque posuere lacinia, convallis ac turpis. Phasellus massa libero, elementum nec tristique in, vehicula vel quam. Nunc euismod iaculis tortor, non auctor augue fermentum et. Aliquam erat volutpat. Vivamus fringilla dictum felis sit amet condimentum. Aliquam erat volutpat. Maecenas hendrerit dignissim placerat. </p>
+                  <h3 style="text-transform: none !important; color:#86c232;">Why Choose Us ?</h3>
+                  <ol class="lim2" style="margin-top:-20px;">
+                     <li class=" g2 lim2">Minimalistic Experience</li>
+                     <li class="g2 lim2">Easy to use Interface</li>
+                     <li class="g2 lim2">All pets vaccinated</li>
+                     <li class="g2 lim2">1000s of pets available</li>
+                     <li class="g2 lim2">Locations accross 50 cities</li>
+                     <li class="g2 lim2">Pet store with all you need</li>
+                     <li class="g2 lim2">Intstant paytment methods</li>
+                     <li class="g2 lim2">Unmatched security</li>
+                     <li class="g2 lim2">Delivered within 7 days</li>
+                       
+                  </ol>
+
+               </div>
+               <div class="col-md-6 offset-md-1">
+                  <div class="full text_align_center">
+                     <img class="img-responsive about2" src="imgs/about22.jpg" alt="#" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="hiw" class="hiw_section layout_padding" style="background: white;">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-7">
+                  <h3 style="color: #222629;">How it Works</h3>
+                  <p style="color: #222629;">Find the ideal pet in your area. All pets are vaccinated and treated.</p>
+               </div>
+               <div class="col-md-5">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <img class="margin_top_30 img-responsive op"  src="imgs/nav.png" alt="#" />
+                  <h3 class="hiww">Locate your living area</h3>
+               </div>
+               <div class="col-md-4">
+                  <img class="margin_top_30 img-responsive op" src="imgs/dccollage.jpg" alt="#" />
+                  <h3 class="hiww">Choose your new friend</h3>
+               </div>
+               <div class="col-md-4">
+                  <img class="margin_top_30 img-responsive op" src="imgs/dinbox.jpg" alt="#"/>
+                  <h3 class="hiww">PICK transport OR pickup</h3>
+               </div>
+            </div>
+         </div>
+
+      </div>
+<div id="service" class="hiw_section layout_padding">
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+         <h3 id="service1">OUR SERVICES</h3>
+         <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-12 ">
+         <div>
+         <iframe  src="https://www.youtube.com/embed/RUlDOnk5cIo"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </div>
+
+   </div>
+        
+</div>
+</div>
+     
       <div id="wcs" class="hiw_section layout_padding">
          <div class="container">
             <div class="row">
@@ -275,33 +294,25 @@
             
          </div>
       </footer>
-    
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
       <script>
          $(function () {
              
              
-          
+            window.onload = function() {
+    document.getElementById("my_audio").play();
+};
              document.getElementById("aboutus").onclick = function () {
                 location.href = "index2.html";
                  };
             document.getElementById("logohome").onclick = function () {
                 location.href = "index.html";
                  };
-                 document.getElementById("register01").onclick = function () {
+            document.getElementById("register01").onclick = function () {
                 location.href = "index3.html";
                  };
-               
-               
          })
-         $(function () {
-  $('.custom-form').parsley().on('form:validate', function (formInstance) {
-    var ok = formInstance.isValid({group: 'block1', force: true}) || formInstance.isValid({group: 'block2', force: true});
-   
-    if (!ok)
-      formInstance.validationResult = false;
-  });
-});
-
       </script>
    </body>
 </html>
