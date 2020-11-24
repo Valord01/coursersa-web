@@ -1,18 +1,23 @@
-<?xml version="1.0" encoding="ISO8859-1" ?>
-<company>
-	<employee>
-		<ename>Prabu</ename>
-		<eage>22</eage>
-		<esalary>3000</esalary>
-	</employee>
-	<employee>
-		<ename>Indu</ename>
-		<eage>20</eage>
-		<esalary>3000</esalary>
-	</employee>
-	<employee>
-		<ename>Rithul</ename>
-		<eage>22</eage>
-		<esalary>3000</esalary>
-	</employee>
-</company>
+<?xml version="1.0" encoding="UTF-8"?>
+<staff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Employee EMPID="a30">
+	<id>emp11</id>
+		<email>marcv@gmail.com</email>
+		<experience>12 years</experience>
+		<phone>9782155694</phone>
+	</Employee>
+	<Employee EMPID="a301">
+	<id>emp22</id>
+	<email>lina@gmail.com </email>
+		<experience>15 years</experience>
+	
+		<phone>9492222354</phone>
+	</Employee>
+	<Employee EMPID="a301">
+	<id>emp33</id>
+	<email>ac@gmail.com</email>
+		<experience>22 years</experience>
+		
+		<phone>7987122354</phone>
+	</Employee>
+	</staff>

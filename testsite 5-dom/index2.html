@@ -22,27 +22,27 @@
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="show-menu">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#hiw">How it's Works</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#wcs">Testimonies</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="index2.html">Contact Us</a>
-                     </li>
-                     <li class="nav-item .search-container">
-                        <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="register01" href="#hiw">Register</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#wcs">Testimonies</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" id="aboutus" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item .search-container">
+                           <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
                         <form>
                            <input type="search" placeholder="Search">
                         </form>
@@ -323,11 +323,34 @@
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script>
-         $(function () { 
-             document.getElementById("logohome").onclick = function () {
-                location.href = "index.html";
-                 };
-         })
+         $(function () {
+        document.getElementById("aboutus").onclick = function () {
+          location.href = "index2.html";
+        };
+        document.getElementById("logohome").onclick = function () {
+          location.href = "index.html";
+        };
+        document.getElementById("register01").onclick = function () {
+          location.href = "index3.html";
+        };
+        document.getElementById("bb").onclick = function () {
+         console.log("yoooooooooooo"); 
+    /*       let zc=document.basic.zip.value;
+            let ad1=document.basic.ad1.value;
+            let ad2=document.basic.ad2.value;
+            let fname=document.basic.fn.value;
+            let lname=document.basic.ln.value;
+            let email=document.basic.em.value;
+            let coun=document.basic.coun.value;
+            let stat=document.basic.stat.value;
+            let pn=document.basic.pn.value;
+            var cars = [zc,ad1,ad2,fname,lname,stat,coun,pn,email];
+            fLen = cars.length;
+for (i = 0; i < fLen; i++) {
+  console.log(cars[i]);
+} */
+        };
+      });
         
          function checklocation()
          {  var loca=document.basic.loc.value;
