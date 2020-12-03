@@ -1,0 +1,6 @@
+{"petcat": [
+    {"photo":"petcat1.jpg'","breed": "Persian", "color": "white", "sex": "Male", "Castrated": "Castrated:Yes", "vaccinated": "Vaccinated: No","age":"3 months" },
+    {"photo":"petcat2.jpg'","breed": "Siamese", "color": "White", "sex": "Male", "Castrated": "Castrated:No", "vaccinated": "Vaccinated: Yes","age":"1.5 months" },
+    {"photo":"petcat3.jpg'","breed": "Maine Coon", "color": "White-Black", "sex": "Female", "Castrated": "Castrated:No", "vaccinated": "Vaccinated: Yes","age":"1 months" },
+    {"photo":"petcat4.jpg'","breed": "Mix", "color": "Black", "sex": "Male", "Castrated": "Castrated:No", "vaccinated": "Vaccinated: Yes","age":"2 months" }
+]}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>GetAPet</title>
+    <script src="srjs.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/parsley.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/montserrat-font.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/index3.css" />
+  </head>
+
+  <body onload="checkCookie()">
+  
+  
+    <div class="b2">
+      <div class="container">
+        <h3 style="color: #86c232; font-size: 3em">Register Today</h3>
+        <form
+          class="custom-form"
+          name="basic"
+          data-parsley-validate=""
+          data-parsley-trigger="keyup"
+          onsubmit="ssetCookie()"
+          id="myForm"
+        >
+          <div class="form-right">
+            <div class="row">
+              <div class="col-md-6 wb rrl pp">
+                <h2 style="padding-bottom: 25px; font-size: 1.7em">
+                  General information
+                </h2>
+
+                <input
+                  placeholder="Email"
+                  type="email"
+                  class="form-control olb wb"
+                  name="stu-email"
+                  required=""
+                  id="em"
+                />
+              </div>
+
+              <div class="col-md-6 gb rrr pp">
+                <h2 style="padding-bottom: 25px; font-size: 1.7em">
+                  Contact details
+                </h2>
+                <input
+                  class="olb form-control gb"
+                  name="yolo"
+                  id="ad1"
+                  placeholder="Address"
+                  type="text"
+                  data-parsley-length="[10, 50]"
+                  data-parsley-group="block1"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 wb pp">
+                <input
+                  type="text"
+                  class="form-control olb wb"
+                  name="stu-name"
+                  pattern=^[a-zA-Z\s]*$
+                  data-parsley-length="[1, 50]"
+                  data-parsley-group="block1"
+                  required=""
+                  placeholder="Name"
+                  id="fn"
+                  onkeydown="Check(event);" 
+                  onkeyup="Check(event);"
+                />
+              </div>
+              <div class="col-md-6 gb pp">
+                <input
+                  class="olb form-control gb"
+                  name="stu-college"
+                  id="ad2"
+                  placeholder="College/University"
+                  type="text"
+                  data-parsley-length="[10, 50]"
+                  data-parsley-group="block1"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 wb pp">
+                <input
+                  type="digit"
+                  class="form-control olb wb"
+                  name="yolo"
+                  placeholder="Phone Number"
+                  pattern="^\d{10}$"
+                  data-parsley-group="block1"
+                  required=""
+                  id="pn"
+                  onkeydown="Check2(event);" 
+                  onkeyup="Check2(event);"
+                />
+              </div>
+
+              <div class="col-md-6 gb pp">
+                <input
+                  class="olb form-control gb"
+                  type="number"
+                  name="yolo"
+                  min="0"
+                  id="coun"
+                  placeholder="Age"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 wb pp">
+                <input
+                  class="olb form-control wb"
+                  type="text"
+                  name="yolo"
+                  data-parsley-group="block1"
+                  placeholder="Username"
+                  pattern="^[A-Z][a-zA-Z0-9]*$"
+                  id="un"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-3 gb pp">
+                <input
+                class="olb form-control gb"
+                type="text"
+                name="stu-branch"
+                placeholder="Branch"
+                id="br"
+                data-parsley-group="block1"
+                required=""
+                />
+              </div>
+              <div class="col-md-3 gb pp">
+                <input
+                  class="olb form-control gb"
+                  type="text"
+                  name="yolo"
+                  id="stat"
+                  placeholder="State"
+                  required=""
+                  data-parsley-group="block1"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 wb rrbl pp">
+                <input
+                 
+                  class="olb form-control wb"
+                  type="password"
+                  name="yolo"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[~`!@#$%^&*()-_+={}[]|\;:>,./?])(?!.*\s).*$"
+                  id="zip"
+                  data-parsley-group="block1"
+                  placeholder="Password"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-6 gb rrbr pp">
+                <button
+                  type="submit"
+                  style="margin-top: 8px"
+                  class="btn btn-primary"
+   
+                  id="bb"
+                >
+                  Register
+                </button>
+                <button
+                  type="button"
+                  style="margin-top: 8px"
+                  class="btn btn-primary"
+                  onclick="getXml()"
+                  id="bb1"
+                >
+                  download xml
+                </button>
+                <p id="p"></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <script>
+      $(function () {
+        document.getElementById("aboutus").onclick = function () {
+          location.href = "index2.html";
+        };
+        document.getElementById("logohome").onclick = function () {
+          location.href = "index.html";
+        };
+        document.getElementById("register01").onclick = function () {
+          location.href = "index3.html";
+        };
+  
+        
+      });
+
+      $(function () {
+        $(".custom-form")
+          .parsley()
+          .on("form:validate", function (formInstance) {
+            var ok =
+              formInstance.isValid({ group: "block1", force: true }) ||
+              formInstance.isValid({ group: "block2", force: true });
+
+            if (!ok) formInstance.validationResult = false;
+          });
+      });
+
+    function Check(e) {
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+    if (keyCode > 47 && keyCode < 58) {
+        e.preventDefault();
+    }}
+    function Check2(e) {
+    var keyCode = (e.keyCode ? e.keyCode : e.which);
+    if (keyCode < 48 || keyCode > 57) {
+        e.preventDefault();
+    }
+}
+
+      function ssetCookie()
+        {  console.log("yoooooooooooooooooooooooooooooooooo"); 
+           let zip=document.basic.zip.value;
+            let ad1=document.basic.ad1.value;
+            let ad2=document.basic.ad2.value;
+            let fn=document.basic.fn.value;
+            let em=document.basic.em.value;
+            let coun=document.basic.coun.value;
+            let stat=document.basic.stat.value;
+            let pn=document.basic.pn.value;
+            let un=document.basic.un.value;
+            let br=document.basic.br.value;
+            var cars = [zip,ad1,ad2,fn,stat,coun,pn,em,un,br];
+            var cars1 = ["zip","ad1","ad2","fn","stat","coun","pn","em","un","br"];
+            fLen = cars.length;
+for (i = 0; i < fLen; i++) {
+  console.log(cars[i]);
+  document.cookie=cars1[i]+"="+cars[i];
+} 
+           
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+   console.log("i got called");
+   var cars2 = ["zip","ad1","ad2","fn","stat","coun","em","un","br"];
+  for(i=0;i<cars2.length;i++)
+{  var c=getCookie(cars2[i]);
+
+  if (c != "") {
+   $('form').find("input[id="+cars2[i]+"]").each(function(ev)
+  {
+      if(!$(this).val()) { 
+     $(this).attr("value", c);
+  }
+  });
+  /*
+    document.getElementById(cars2[i]).attr.value=c;*/
+  } else { console.log("didnt get data");}
+ }
+}
+function getXml(){
+    console.log("igotxml")
+    var elements = document.forms.myForm.elements;
+    var xmlTemplate = '<?xml version="1.0"?> <Christ>';
+    var c=0;
+        for(var i =0; i< elements.length; i++){
+    
+        var element = elements[i];
+        if(element.tagName=="INPUT"){
+            if(c==0){xmlTemplate=xmlTemplate+'<CS>'}
+            if(element.name=="stu-email")
+            {c++;
+            xmlTemplate = xmlTemplate + '<'+element.name+'>' + element.value+'</'+element.name+'>';
+            }
+            if(element.name=="stu-name")
+            {c++;
+            xmlTemplate = xmlTemplate + '<'+element.name+'>' + element.value+'</'+element.name+'>';
+            }
+            if(element.name=="stu-branch")
+            {c++;
+            xmlTemplate = xmlTemplate + '<'+element.name+'>' + element.value+'</'+element.name+'>';
+            }
+            if(element.name=="stu-college")
+            {c++;
+            xmlTemplate = xmlTemplate + '<'+element.name+'>' + element.value+'</'+element.name+'>';
+            }
+        }
+
+
+    }
+    xmlTemplate = xmlTemplate +'</CS>';
+    xmlTemplate = xmlTemplate +'</Christ>';
+   var data=xmlTemplate;
+   downloadData("text/xml",data,"student.xml");
+}
+
+function downloadData(contentType,data,filename){
+	 
+     var link=document.createElement("A");
+     link.setAttribute("href",encodeURI("data:"+contentType+","+data));
+     link.setAttribute("style","display:none");
+     link.setAttribute("download",filename);
+     document.body.appendChild(link); 
+     console.log(link.outerHTML);
+     link.click();
+     setTimeout(function(){
+         document.body.removeChild(link);
+     },1000);
+  }
+  
+
+
+
+    </script>
+  </body>
+</html>
