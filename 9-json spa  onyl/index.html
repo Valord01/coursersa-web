@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GetAPet</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/fontawesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <script src= 
+      "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"> 
+            </script> 
+              <script src= 
+      "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"> 
+            </script> 
+         
+            <script src="test.js"></script>
+   </head>
+
+
+   
+   <body>
+      <div id="header" class="header">
+         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+               <a class="navbar-brand" id="logohome" ><img src="imgs/logo.png" alt="#" /></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-expanded="false" aria-label="Toggle navigation">
+               <span style="  margin: unset;
+               line-height: normal;
+               animation: none;
+               justify-content: unset;
+               align-items: unset;
+               font-family: none;
+               font-size: unset;
+                                " 
+             class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="show-menu">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="register01">Register</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#wcs">Testimonies</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="aboutus">Contact Us</a>
+                     </li>
+                     <li class="nav-item .search-container">
+                        <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
+                        <form>
+                           <input type="search" placeholder="Search">
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <div ng-view></div> 
+     
+      <div id="wcs" class="hiw_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text_align_center">
+                  <h3>What people are saying</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis sem, lacinia vitae felis sit amet, eleifend suscipit elit. Nullam</p>
+               </div>
+               <div class="col-md-5">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-11">
+                  <div class="full testimonial_blog">
+                     <p  style=" color:#86c232;" >Prerna Dessai</p>
+                     <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus turpis sem, lacinia vitae felis sit amet, eleifend suscipit elit. Nullam ullamcorper ligula nisl, ac maximus tortor venenatis sed. Cras ultricies urna libero, sit amet tristique lacus varius eget. Nulla facilisi. Aenean malesuada, diam feugiat tristique viverra, tellus mauris mollis diam, ac dapibus dui ex in ligula. Aenean ultricies pulvinar erat non lacinia. Phasellus ullamcorper neque et quam maximus, ultricies commodo eros ornare. Cras placerat urna et malesuada bibendum. Vestibulum tristique, magna id luctus viverra, libero sem rutrum lectus, eu blandit purus ligula lobortis augue.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="subcribe">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <h3  style="color:#86c232;" >Newsletter</h3>
+                  <p>Subscribe to our Newsletter to get weekly updates. Stories of all over India.</p>
+               </div>
+               <div class="col-md-8 col-sm-6">
+                  <form>
+                     <input type="email" name="email" placeholder="Enter Your Email Address" />
+                     <button>Subscribe</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+           
+         <div class="row">
+            <div class="col-md-12 mainsa">
+            <span class="sp2">A</span>
+            <span class="sp2">D</span>
+            <span class="sp2 letter"></span>
+            <span class="sp2">P</span>
+            <span class="sp2">T</span>
+            </div>
+         </div>
+         <div class="row">
+            
+            <div class="col-md-12 mainsa2">
+            <p>TODAY</p>
+            </div>
+            
+         </div>
+         
+      </div>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="footer_blog_section">
+                     <img src="imgs/logo.png" alt="#" />
+                     <p style="margin-top: 5px;">It is a long established fact that a reader will be distracted by the readable content..</p>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Navigation</h4>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Features</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Contact Info</h4>
+                     <p><img style="height: 24px; width:24px; margin-top: -3px;" src="imgs/navi.png" alt="#"/>
+                        <strong> Main office Address:</strong>
+                     </p>
+                     <p>  H.No 126 Panaji Bardez 403507 Goa</p>
+                     <p><img style="height: 22px; width:22px; margin-top: -3px;" src="imgs/phone.png" alt="#" /><p>
+                        <strong>Customer Service:</strong>
+                      </p>
+                     <p>  9284472300</p>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-12">
+                  <div class="item">
+                     <h4 class="text-uppercase">Discover</h4>
+                     <ul class="dll" >
+                        <li><a  href="#">Help</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright text-center">
+            <p>Copyright ... <a href="#"> </a></p>
+            
+         </div>
+      </footer>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+         $(function () {
+             
+             
+                 document.getElementById("aboutus").onclick = function () {
+                location.href = "#/fourth";
+                 };
+            document.getElementById("logohome").onclick = function () {
+                location.href = "#/";
+                 };
+            document.getElementById("register01").onclick = function () {
+                location.href = "#/third";
+                 };
+           
+                
+         })
+         var app = angular.module('myApp', []); 
+            var app = angular.module('myApp', ['ngRoute']); 
+            app.config(function($routeProvider) { 
+            $routeProvider 
+  
+            .when('/second', { 
+            templateUrl : 'petcateg.html', 
+            controller : 'SecondController'
+            }) 
+            .when('/', { 
+            templateUrl : 'index1.html', 
+            controller : 'SecondController'
+            }) 
+            .when('/home', { 
+            templateUrl : 'index1.html', 
+            controller : 'SecondController'
+            }) 
+  
+            .when('/third', { 
+            templateUrl : 'index3.html', 
+            controller : 'ThirdController'
+            }) 
+            .when('/fourth', { 
+            templateUrl : 'index2.html', 
+            controller : 'ThirdController'
+            })  
+  
+            .otherwise({redirectTo: '/'}); 
+            }); 
+  
+            app.controller('SecondController', function($scope) { 
+            $scope.message = 'Hello from SecondController';
+            document.getElementById("catcat").onclick = function () {
+            document.getElementById("remove-choice").setAttribute("hidden", true);
+            document.getElementById("petcats").setAttribute("class", "b2 container");
+            filldata();
+        }; 
+            }); 
+  
+            app.controller('ThirdController', function($scope,$http) { 
+            $scope.message = 'Hello from ThirdController'; 
+            
+  
+  $http.get('task.json').success(function (data){
+       $scope.tasks = data;
+   });
+   console.log($scope.tasks);
+   $scope.add= function(){
+     console.log("yo");
+      $scope.bla="sijs";
+       $scope.tasks.push({ name:$scope.Name, location:$scope.location, phone:$scope.phone,age:$scope.age });
+   }
+   $scope.delete=function(){
+       var result=confirm('Are you sure?');
+       if(result==true)
+       {
+           var index=this.$index;
+           $scope.tasks.splice(index,1);
+       }
+   }
+   $scope.edit=function(name)
+   {
+       var index=this.$index;
+       var product=$scope.tasks[index];
+       $scope.Name=product.name;
+       $scope.location=product.location;
+       $scope.phone=product.phone;
+       $scope.age=product.age;
+       
+
+   }
+   $scope.save=function()
+   {
+       var index=getindex($scope.Name);
+       $scope.tasks[index].name=$scope.Name;
+       $scope.tasks[index].location=$scope.location;
+       $scope.tasks[index].phone=$scope.phone;
+       $scope.tasks[index].age=$scope.age;
+   }
+   function getindex(name)
+   {
+       for(var i=0;i<$scope.tasks.length;i++)
+       if($scope.tasks[i].name==name)
+       return i;
+       return -1;
+   }
+
+   $scope.rowlimit=6;
+        
+        
+        }); 
+           
+
+            $(function () {
+       
+        
+       document.getElementById("catcat").onclick = function () {
+           document.getElementById("remove-choice").setAttribute("hidden", true);
+           document.getElementById("petcats").setAttribute("class", "b2 container");
+           filldata();
+       };
+       
+     });
+     function filldata(){
+       
+       var ajaxRequest = new XMLHttpRequest();
+       ajaxRequest.onreadystatechange = function(){
+       
+         if(ajaxRequest.readyState == 4){
+           //the request is completed, now check its status
+           if(ajaxRequest.status == 200){
+             //turn JSON into object
+             var jsonObj = JSON.parse(ajaxRequest.responseText);
+             jsonstuff(jsonObj);  
+           }
+           else{
+             console.log("Status error: " + ajaxRequest.status);
+           }
+         }
+         else{
+           console.log("Ignored readyState: " + ajaxRequest.readyState);
+         }
+       
+       
+       }
+       ajaxRequest.open('GET', 'pets.json');
+       ajaxRequest.send();
+     }
+    function jsonstuff(jsonObj){
+       
+             //get random object from array
+             var petcat= jsonObj.petcat;
+             var t="<div class='container'> <h5 style='color: #86c232; font-size: 3em'>Available for adoption</h5>";
+             var i;
+               for(i=0;i<4;i++)
+               { var petObj = petcat[i];
+                   if(i%2==0){
+                       t=t+"<div class='row'>";
+                   }
+                   t=t+"<div class='col-md-6 container1'><img class='margin_top_30 img-responsive op image'  src='imgs/"+petObj.photo+"alt='#'/>";
+                       t=t+ "<div class='overlay'>"+"<div class='text'>"+"<p>"+petObj.breed+"</p>"+"<p>"+petObj.age+"</p>"+"<p>"+petObj.color+"</p>"+"<p>"+petObj.vaccinated+"</p>"+"<p>"+petObj.Castrated+"</p>"+"<p>"+petObj.sex+"</p>"+"</div>" +"</div></div>";
+                   if(i%2!=0){
+                       t=t+"</div>";
+                   }
+               }
+               t=t+"</div><div><br><br><br></div>";
+             document.getElementById("petcats").innerHTML = t;
+           
+    }
+
+      </script>
+   </body>
+</html>

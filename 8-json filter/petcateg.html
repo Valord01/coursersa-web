@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>GetAPet</title>
+    <script src="srjs.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/parsley.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/montserrat-font.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/index3.css" />
+    <style>
+        .container1 {
+          position: relative;
+        }
+        
+        .image {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+        
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #000000;
+        }
+        
+        .container1:hover .overlay {
+          opacity: .6;
+        }
+        
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        </style>
+  </head>
+
+  <body>
+   
+    <div class="copyright text-center">
+        <p>Copyright ... <a href="#"> </a></p>
+    </div>
+    <div class="b2">
+    <div class="b2" id="petcats">
+      <div class="container" id="remove-choice">
+        <h3 style="color: #86c232; font-size: 3em">Choose between cats and dogs</h3>
+        <div class="container">
+            
+            <div class="row">
+               <div class="col-md-6">
+                  <img id="catcat"  class="margin_top_30 img-responsive op"  src="imgs/catcat.jpg" alt="#" />
+                  <h3 class="hiww">CATS</h3>
+               </div>
+               <div class="col-md-6">
+                  <a><img id="catdog" class="margin_top_30 img-responsive op" src="imgs/catdog.jpg" alt="#"/></a>
+                  <h3 class="hiww">Dogs</h3>
+               </div>
+               
+         </div>
+        </div>
+      </div>
+ 
+      </div>
+     
+    </div>
+     
+
+ 
+    <script>
+      $(function () {
+       
+        
+        document.getElementById("catcat").onclick = function () {
+            document.getElementById("remove-choice").setAttribute("hidden", true);
+            document.getElementById("petcats").setAttribute("class", "b2 container");
+            filldata();
+        };
+        
+      });
+      function filldata(){
+        
+        var ajaxRequest = new XMLHttpRequest();
+        ajaxRequest.onreadystatechange = function(){
+        
+          if(ajaxRequest.readyState == 4){
+            //the request is completed, now check its status
+            if(ajaxRequest.status == 200){
+              //turn JSON into object
+              var jsonObj = JSON.parse(ajaxRequest.responseText);
+              jsonstuff(jsonObj);  
+            }
+            else{
+              console.log("Status error: " + ajaxRequest.status);
+            }
+          }
+          else{
+            console.log("Ignored readyState: " + ajaxRequest.readyState);
+          }
+        
+        
+        }
+        ajaxRequest.open('GET', 'pets.json');
+        ajaxRequest.send();
+      }
+     function jsonstuff(jsonObj){
+        
+              //get random object from array
+              var petcat= jsonObj.petcat;
+              var t="<div class='container'> <h5 style='color: #86c232; font-size: 3em'>Available for adoption</h5>";
+              var i;
+                for(i=0;i<4;i++)
+                { var petObj = petcat[i];
+                    if(i%2==0){
+                        t=t+"<div class='row'>";
+                    }
+                    t=t+"<div class='col-md-6 container1'><img class='margin_top_30 img-responsive op image'  src='imgs/"+petObj.photo+"alt='#'/>";
+                        t=t+ "<div class='overlay'>"+"<div class='text'>"+"<p>"+petObj.breed+"</p>"+"<p>"+petObj.age+"</p>"+"<p>"+petObj.color+"</p>"+"<p>"+petObj.vaccinated+"</p>"+"<p>"+petObj.Castrated+"</p>"+"<p>"+petObj.sex+"</p>"+"</div>" +"</div></div>";
+                    if(i%2!=0){
+                        t=t+"</div>";
+                    }
+                }
+                t=t+"</div><div><br><br><br></div>";
+              document.getElementById("petcats").innerHTML = t;
+            
+     }
+    </script>
+  </body>
+</html>

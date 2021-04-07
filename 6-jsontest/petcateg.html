@@ -71,7 +71,7 @@
         </style>
   </head>
 
-  <body onload="checkCookie()">
+  <body>
     <div id="header" class="header">
       <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
         <div class="container">
@@ -133,7 +133,7 @@
       </nav>
     </div>
     <div class="copyright text-center">
-      <p>Copyright ... <a href="#"> </a></p>
+        <p>Copyright ... <a href="#"> </a></p>
     </div>
     <div class="b2">
     <div class="b2" id="petcats">
@@ -147,7 +147,7 @@
                   <h3 class="hiww">CATS</h3>
                </div>
                <div class="col-md-6">
-                  <a><img id="catdog" class="margin_top_30 img-responsive op" src="imgs/catdog.jpg" alt="#" height="300px" width="300"/></a>
+                  <a><img id="catdog" class="margin_top_30 img-responsive op" src="imgs/catdog.jpg" alt="#"/></a>
                   <h3 class="hiww">Dogs</h3>
                </div>
                
@@ -156,7 +156,7 @@
       </div>
  
       </div>
-
+     
     </div>
      
     <div id="wcs" class="hiw_section layout_padding">
@@ -315,7 +315,7 @@
         
               //get random object from array
               var petcat= jsonObj.petcat;
-              var t="<div class='container'>";
+              var t="<div class='container'> <h5 style='color: #86c232; font-size: 3em'>Available for adoption</h5>";
               var i;
                 for(i=0;i<4;i++)
                 { var petObj = petcat[i];
@@ -328,7 +328,7 @@
                         t=t+"</div>";
                     }
                 }
-                t=t+"</div>";
+                t=t+"</div><div><br><br><br></div>";
               document.getElementById("petcats").innerHTML = t;
             
      }

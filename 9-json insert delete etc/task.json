@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Karen Diya",
+      "location": "Banglore",
+      "phone": "923372300",
+      "age":"12"
+    },
+    {
+        "name": "Edward D'souza",
+        "location": "Goa",
+        "phone": "8823124455",
+        "age":"23"
+      },
+      {
+        "name": "Rohan Matthew",
+        "location": "Kerala",
+        "phone": "7798912435",
+        "age":"24"
+      }
+]
+

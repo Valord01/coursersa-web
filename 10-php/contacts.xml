@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="contacts.xsd">
+	<Employee EMPID="a30">
+		<name>Karen Diya</name>
+		<location>Banglore</location>
+		<as>400</as>
+		<phone>9494561234</phone>
+	</Employee>
+	<Employee EMPID="a301">
+		<name>Edward D'souza</name>
+		<location>Mumbai</location>
+		<as>105</as>
+		<phone>9492222354</phone>
+	</Employee>
+	<Employee EMPID="idvlaue3">
+		<name>Rohan Matthew</name>
+		<location>Goa</location>
+		<as>900</as>
+		<phone>7798912333</phone>
+	</Employee>
+	<Employee EMPID="idvlaue4">
+		<name>Ishita Srivastava</name>
+		<location>Delhi</location>
+		<as>790</as>
+		<phone>7087650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue5">
+		<name>Sumi Thomas</name>
+		<location>Banglore</location>
+		<as>190</as>
+		<phone>9687650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue6">
+		<name>Anwesha Shah</name>
+		<location>Delhi</location>
+		<as>240</as>
+		<phone>9787650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue7">
+		<name>Sanjay Anand</name>
+		<location>Goa</location>
+		<as>550</as>
+		<phone>9787650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue8">
+		<name>Adriel Gomes</name>
+		<location>Delhi</location>
+		<as>950</as>
+		<phone>8787650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue9">
+		<name>Merin Mariyam George</name>
+		<location>Banglore</location>
+		<as>980</as>
+		<phone>9887650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue10">
+		<name>Yash Kataria</name>
+		<location>Goa</location>
+		<as>400</as>
+		<phone>7787650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue11">
+		<name>Ishaan Yadav</name>
+		<location>Goa</location>
+		<as>780</as>
+		<phone>9887650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue12">
+		<name>Kriya Dudi</name>
+		<location>Banglore</location>
+		<as>150</as>
+		<phone>8887650665</phone>
+	</Employee>
+	<Employee EMPID="idvlaue13">
+		<name>Luciano Pinto</name>
+		<location>Delhi</location>
+		<as>650</as>
+		<phone>9987985065</phone>
+	</Employee>
+	<Employee EMPID="idvlaue14">
+		<name>Leanne Morrais</name>
+		<location>Goa</location>
+		<as>890</as>
+		<phone>7987650215</phone>
+	</Employee>
+</Contacts>

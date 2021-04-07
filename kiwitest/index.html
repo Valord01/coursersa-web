@@ -1,166 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sign Up</title>
-        <link rel="icon" type="image/x-icon" href="img/cZZ.png" />
-        <link rel="stylesheet" type="text/css" href=".css">
-    </head>
-    <body>
-        <div class="wrap">
-            <h1>Gateways 2020</h1>
-            <h3>TECHOVID</h3>
-            <form name="myForm" class="box" onsubmit=" return validate()" action="Welcome.html">
-                <input id="name" type="text" onkeypress="return test(event)" placeholder="Name" title="Name">
-                <input id="email" type="text" placeholder="Email ID" name="email" title="Email ID:write valid email address">
-                <input id="branch" type="text" placeholder="Branch" title="Branch">
-                <input id="colName" type="text" placeholder="Collage/University Name" title="Collage/University Name">
-                <input id="state" type="text" placeholder="State" title="State">
-                <textarea rows="5" cols="50" title="Write your permanent address" placeholder="Permanent address" id="address"></textarea>
-                <input id="phno" type="tel" placeholder="Phone no" maxlength="10" title="Phone number">
-                <input id="uname" type="text" placeholder="Username" title="Username" onkeyup="javascript:capitalize(this.id, this.value);">                
-                <input id="pwd" type="password" placeholder="Password" title="PASSWORD SHOULD CONTAIN: atleast 8 characters, one lowercase letter, one uppercase letter, one numeric digit, one special character" >
-                <label id="remem">Remember Me <input type="checkbox" name="Remember Me" ></label>
-                <input type="submit" value="Submit" >
-            </form>
-        </div>
-        <script>
-                 window.onload = function ()
-            {
-                if (document.cookie.length != 0) 
-                {
-                    document.getElementById("RememberMe").checked=true;
+<html ng-app="myApp"> 
+  <head ang="en"> 
+      <!--import the angularjs libraries--> 
+      <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"> 
+    </script> 
+      <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"> 
+    </script> 
 
-                    var AllCookies, Temp;
-                    AllCookies = document.cookie.split(';');
-                    for (var i=0; i < AllCookies.length; i++) 
-                    {
-                        // alert(AllCookies[i]);
-                        Temp = AllCookies[i].split('=');
-                        // alert(Temp);
-                        if (Temp[0] == "uname")
-                        {
-                            document.getElementById("uname").value = Temp[1];
-                        }
-                        if(Temp[0] == "phno")
-                        {   
-                            document.getElementById("phno").value = Temp[1];
-                        }
-                    }
+	<title>MENU</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+    table,
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    
+div.scrollmenu {
+background-color: #333;
+overflow: auto;
+white-space: nowrap;
+}
+div.scrollmenu a {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px;
+text-decoration: none;
+}
 
-                }
-            }
+div.scrollmenu a:hover {
+background-color: #777;
+}
 
-                
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+  </style>
+</head>
+<body bgcolor=#800000>
+  
 
 
 
-            
 
-            function test(event)
-            {
-                let code=event.which;
-                if(code>47 && code<58)
-                return false;
-                else
-                return true;
-            }
-            function capitalize(textboxid, str) 
-            {
-                // string with alteast one character
-                if (str && str.length >= 1)
-                {       
-                    var firstChar = str.charAt(0);
-                    var remainingStr = str.slice(1);
-                    str = firstChar.toUpperCase() + remainingStr;
-                }
-                document.getElementById(textboxid).value = str;
-            }
-            function validate()
-            {
-                var mailformat = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
-                var paswd=  /^(?=.[0-9])(?=.[!@#$%^&])[a-zA-Z0-9!@#$%^&]{7,15}$/;
-                let name=document.getElementById("name");
-                let email=document.getElementById("email");
-                let branch=document.getElementById("branch");
-                let colName=document.getElementById("colName");
-                let state=document.getElementById("state");
-                let address=document.getElementById("address");
-                let phno=document.getElementById("phno");
-                let uname=document.getElementById("uname");
-                let pwd=document.getElementById("pwd");
-                if(name.value.trim()=="")
-               {
-                   alert("First name is required");
-                   return(false);
-               } 
-               else if(email.value.trim()=="")
-               {
-                   alert("Email is required");
-                   return(false);
-               }
-               else if(!email.value.match(mailformat))
-               {
-                   alert("Invalid Email!");
-                   return(false);
-               }
-               else if(branch.value.trim()=="")
-               {
-                   alert("Branch is required");
-                   return(false);
-               }
-               else if(colName.value.trim()=="")
-               {
-                   alert("Collage/University Name is required");
-                   return(false);
-               }
-               else if(state.value.trim()=="")
-               {
-                   alert("State is required");
-                   return(false);
-               }
-               else if(address.value.trim()=="")
-               {
-                   alert("Address is required");
-                   return(false);
-               }
-               else if(phno.value.trim()=="")
-               {
-                   alert("Phone number is required");
-                   return(false);
-               }
-               else if(uname.value.trim()=="")
-               {
-                   alert("Username is required");
-                   return(false);
-               }
-               else if(pwd.value.trim()=="")
-               {
-                    alert("Password is required");
-                   return(false);
-               }
-               else if(!pwd.value.match(paswd))
-               {
-                   alert("Invalid password!");
-                   return(false);
-               }
-               else
-               {
-                alert("Login Successfull.");
-                    if(document.getElementById("RememberMe").checked==true)
-                    {
-                        CookieGenerate();
-                    }
-                    window.location.replace("Welcome.html");
-               }
 
-            }
-            function CookieGenerate() 
-            {
-                document.cookie="uname="+document.getElementById("uname").value+"; expires=Thu, 17 Dec 2020 12:00:00 UTC";
-                document.cookie="phno="+document.getElementById("phno").value+"; expires=Thu, 17 Dec 2020 12:00:00 UTC";
-                window.location.replace("Welcome.html");
-            }
 
-        </script>
-    </body>
+
+
+
+
+
+</body>
 </html>

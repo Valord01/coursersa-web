@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Karen Diya",
+    "location": "Banglore",
+    "phone": "923372300",
+    "age":"12"
+  },
+  {
+      "name": "Edward D'souza",
+      "location": "Goa",
+      "phone": "8823124455",
+      "age":"23"
+    },
+    {
+      "name": "Rohan Matthew",
+      "location": "Kerala",
+      "phone": "7798912435",
+      "age":"24"
+    },
+    {
+      "name": "Sumi Thomas",
+      "location": "Goa",
+      "phone": "88231242355",
+      "age":"22"
+    },
+    {
+      "name": "Merin Goerge",
+      "location": "Karnataka",
+      "phone": "9923124455",
+      "age":"75"
+    },
+    {
+      "name": "Yash Kataria",
+      "location": "Punjab",
+      "phone": "7798124455",
+      "age":"27"
+    }
+]
+
