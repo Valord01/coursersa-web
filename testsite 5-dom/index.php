@@ -1,6 +1,16 @@
 <?php 
     // Start MySQL Connection
-    include('connect.php'); 
+    $username = "root";  // enter your username for mysql
+$password = "";  // enter your password for mysql
+$servername = "localhost";      // this is usually "localhost" unless your database resides on a different server
+
+//$dbh = mysqli_pconnect($MyHostname , $MyUsername, $MyPassword) or die("cannot connect");
+
+$conn = new mysqli($servername, $username, $password,"data");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  echo "Connected successfully";
 
 
 ?>
@@ -45,15 +55,16 @@
           </tr>
 <?php
 
-
+    
     // Retrieve all records and display them
-    $result = mysql_query("SELECT * FROM data ORDER BY id DESC");
-
+  //  $result = mysqli_query("SELECT * FROM data ORDER BY id DESC");
+    //$result=  $conn->query("SELECT * FROM data ORDER BY id DESC");
     // Used for row color toggle
+    $result = $conn->query("SELECT * FROM datate ORDER BY id DESC");
     $oddrow = true;
 
     // process every record
-    while( $row = mysql_fetch_array($result) )
+    while( $row = $result->fetch_array() )
     {
         if ($oddrow) 
         { 
@@ -69,7 +80,7 @@
         echo '<tr>';
         echo '   <td'.$css_class.'>'.$row["id"].'</td>';
         echo '   <td'.$css_class.'>'.$row["date"].'</td>';
-        echo '   <td'.$css_class.'>'.$row["temperature"].'</td>';
+        echo '   <td'.$css_class.'>'.$row["temparature"].'</td>';
         echo '   <td'.$css_class.'>'.$row["humidity"].'</td>';
         echo '   <td'.$css_class.'>'.$row["pressure"].'</td>';
         echo '</tr>';
