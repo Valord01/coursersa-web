@@ -4,7 +4,7 @@
 
 $username = "root";  // enter your username for mysql
 $password = "";  // enter your password for mysql
-$servername = "localhost"; 
+$servername = "http://13546e9c679c.ngrok.io"; 
 
 
 $conn = new mysqli($servername, $username, $password,"data");
